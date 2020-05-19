@@ -8,10 +8,11 @@ metadata:
 spec:
   externalTrafficPolicy: Cluster
   ports:
-    port: 80
+  - port: 80
     protocol: TCP
     targetPort: 80
   selector:
     app: webui
   sessionAffinity: None
   type: LoadBalancer
+
